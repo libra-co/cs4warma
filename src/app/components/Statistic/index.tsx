@@ -12,7 +12,7 @@ const Statistic = () => {
       }}
     >
       <CardHeader>
-        <span>数据统计</span>
+        <span>🏆数据统计</span>
       </CardHeader>
       <CardBody>
         <StatisticCard />
