@@ -1,4 +1,4 @@
-import { Card, CardBody, CardHeader } from "@heroui/card";
+import { Card, CardBody } from "@heroui/card";
 import { Link } from "@heroui/link";
 import { LinkIcon } from "@heroui/shared-icons";
 import React from "react";
