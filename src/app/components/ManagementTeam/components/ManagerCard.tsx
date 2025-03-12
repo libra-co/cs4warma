@@ -1,8 +1,13 @@
-import React from "react";
+import React, { type FC } from "react";
 import { Card, CardBody } from "@heroui/card";
 import { Avatar } from "@heroui/avatar";
 
-const ManagerCard = () => {
+interface ManagerCardProps {
+  name: string
+  description: string
+}
+
+const ManagerCard: FC<ManagerCardProps> = ({ name, description }) => {
   return (
     <Card
       classNames={{
@@ -19,13 +24,12 @@ const ManagerCard = () => {
           color="warning"
           src="/warma.gif"
           className="size-[128px]"
-          
         />
         <div>
           <p className="text-2xl font-bold text-center text-[#2c2b7c]">
-            Warmma
+            {name}
           </p>
-          <p className="text-sm text-gray-500 text-center">Descriptions</p>
+          <p className="text-sm text-gray-500 text-center">{description}</p>
         </div>
       </CardBody>
     </Card>
